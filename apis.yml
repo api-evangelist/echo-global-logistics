@@ -1,0 +1,177 @@
+aid: echo-global-logistics
+url: https://raw.githubusercontent.com/api-evangelist/echo-global-logistics/refs/heads/main/apis.yml
+name: Echo Global Logistics
+kind: company
+description: >-
+  Echo Global Logistics is a third-party logistics (3PL) provider and freight
+  brokerage offering multimodal transportation (full truckload, LTL,
+  partial, intermodal rail, air and ocean, drayage) and managed transportation
+  technology. Echo was taken private by The Jordan Company in June 2021
+  for $1.3B. Its technology platform spans EchoShip (shipper portal),
+  EchoDrive (carrier portal and mobile app), EchoConnect (broker architecture)
+  and EchoSync, the API and EDI integration platform.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Logistics
+  - Freight
+  - Trucking
+  - Supply Chain
+  - Third Party Logistics
+  - Freight Brokerage
+  - LTL
+  - Truckload
+  - Intermodal
+  - EDI
+  - Transportation Management
+  - B2B
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: echo-global-logistics:authorizer-api
+    name: EchoSync Authorizer API
+    description: >-
+      OAuth 2.0 authorization endpoint that issues bearer tokens consumed by the
+      EchoSync Customer API and Carrier API. Existing partners request credentials
+      via their Echo sales representative or info@echo.com.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.echo.com/technology/integrations/echosync/documentation/
+    tags:
+      - Authentication
+      - OAuth 2.0
+      - REST
+      - EchoSync
+    properties:
+      - type: Documentation
+        url: https://www.echo.com/technology/integrations/echosync/documentation/
+      - type: Authentication
+        url: https://www.echo.com/technology/integrations/echosync/documentation/
+  - aid: echo-global-logistics:customer-api
+    name: EchoSync Customer API
+    description: >-
+      Shipper-facing REST API providing rapid access to competitive truckload
+      quotes and rates 24/7/365, load creation, tracking, and document retrieval.
+      Authentication uses OAuth 2.0 bearer tokens issued by the Authorizer API.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.echo.com/technology/integrations/echosync/documentation/
+    tags:
+      - Shipper
+      - Truckload
+      - Quoting
+      - Tracking
+      - REST
+      - EchoSync
+    properties:
+      - type: Documentation
+        url: https://www.echo.com/technology/integrations/echosync/documentation/
+      - type: APIReference
+        url: https://app.swaggerhub.com/organizations/EchoGlobalLogistics
+  - aid: echo-global-logistics:carrier-api
+    name: EchoSync Carrier API
+    description: >-
+      Carrier-facing REST API enabling carriers to view available truck loads in
+      real time, place offers, and book loads using Echo's Book It Now feature.
+      Authentication uses OAuth 2.0 bearer tokens issued by the Authorizer API.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.echo.com/technology/integrations/echosync/documentation/
+    tags:
+      - Carrier
+      - Loadboard
+      - Book It Now
+      - REST
+      - EchoSync
+    properties:
+      - type: Documentation
+        url: https://www.echo.com/technology/integrations/echosync/documentation/
+      - type: APIReference
+        url: https://app.swaggerhub.com/organizations/EchoGlobalLogistics
+  - aid: echo-global-logistics:partner-connect-api
+    name: EchoSync Partner-Connect API
+    description: >-
+      TMS partner integration API providing seamless load creation (Truckload,
+      LTL, and Partial), LTL freight rating, real-time tracking, and document
+      retrieval. Aimed at third-party TMS platforms and managed-transportation
+      partners integrating with Echo on behalf of shippers.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.echo.com/technology/integrations/echosync/documentation/
+    tags:
+      - Partner
+      - TMS
+      - LTL
+      - Truckload
+      - Tracking
+      - REST
+      - EchoSync
+    properties:
+      - type: Documentation
+        url: https://www.echo.com/technology/integrations/echosync/documentation/
+      - type: APIReference
+        url: https://app.swaggerhub.com/organizations/EchoGlobalLogistics
+  - aid: echo-global-logistics:edi
+    name: Echo EDI Integration
+    description: >-
+      Echo supports system-to-system EDI integration alongside its REST APIs
+      via the EchoSync platform, enabling shippers, carriers, third parties, and
+      TMS software to exchange transactional data with Echo's systems.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.echo.com/technology/integrations/echosync/
+    tags:
+      - EDI
+      - Integration
+      - B2B
+      - EchoSync
+    properties:
+      - type: Documentation
+        url: https://www.echo.com/technology/integrations/echosync/
+common:
+  - type: Website
+    url: https://www.echo.com/
+  - type: Portal
+    url: https://www.echo.com/technology/integrations/echosync/
+  - type: Documentation
+    url: https://www.echo.com/technology/integrations/echosync/documentation/
+  - type: APIReference
+    url: https://app.swaggerhub.com/organizations/EchoGlobalLogistics
+  - type: Authentication
+    url: https://www.echo.com/technology/integrations/echosync/documentation/
+  - type: Support
+    url: https://www.echo.com/company/contact-us/
+  - type: Blog
+    url: https://www.echo.com/resources/blog/
+  - type: RSS
+    url: https://www.echo.com/feed/
+  - type: PressReleases
+    url: https://www.echo.com/company/about-us/press-releases/
+  - type: News
+    url: https://www.echo.com/company/about-us/press-releases/
+  - type: CaseStudies
+    url: https://www.echo.com/resources/case-studies/
+  - type: WhitePapers
+    url: https://www.echo.com/resources/white-papers/
+  - type: Webinars
+    url: https://www.echo.com/resources/webinars-videos/
+  - type: Careers
+    url: https://www.echo.com/company/careers/open-positions/
+  - type: AboutUs
+    url: https://www.echo.com/company/about-us/
+  - type: ContactUs
+    url: https://www.echo.com/company/contact-us/
+  - type: GitHubOrganization
+    url: https://github.com/EchoGlobalLogistics
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/echo-global-logistics
+  - type: ShipperApp
+    url: https://www.echo.com/technology/shipper-technology/
+  - type: CarrierApp
+    url: https://www.echo.com/technology/carrier-technology/
+  - type: MobileApp
+    url: https://www.echo.com/carriers/echodrive-mobile/
+  - type: Plans
+    url: plans/echo-global-logistics-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/echo-global-logistics-rate-limits.yml
+  - type: FinOps
+    url: finops/echo-global-logistics-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

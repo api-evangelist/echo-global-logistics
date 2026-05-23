@@ -1,0 +1,52 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Echo Global Logistics
+providerId: echo-global-logistics
+created: '2026-05-23'
+modified: '2026-05-23'
+reconciled: false
+tags:
+  - Logistics
+  - Freight
+  - Third Party Logistics
+  - Freight Brokerage
+  - API
+  - Plans
+description: >-
+  Placeholder plans/pricing artifact for Echo Global Logistics' EchoSync APIs
+  (Authorizer, Customer, Carrier, Partner-Connect). Echo is a privately held
+  3PL whose APIs are gated to existing shipper, carrier, and TMS partners —
+  there is no public, self-serve pricing surface. Pricing for the underlying
+  transportation services is contract-negotiated and tied to brokerage and
+  managed-transportation engagements rather than to API consumption.
+notes: >-
+  Initial scaffold — Echo does not publish API plan tiers. API access is
+  bundled with an underlying brokerage or managed-transportation relationship
+  and provisioned via the sales team (info@echo.com).
+sources:
+  - https://www.echo.com/technology/integrations/echosync/
+  - https://www.echo.com/technology/integrations/echosync/documentation/
+plans:
+  - id: echo-global-logistics-partner
+    name: EchoSync Partner Access
+    type: enterprise
+    description: >-
+      Bundled with an active shipper, carrier, or TMS partner relationship.
+      Access provisioned by Echo sales; no public list pricing.
+    entries:
+      - label: API Access
+        name: api_access
+        type: contracted
+        metric: bundled-with-services
+        limit: -1
+        timeFrame: contract
+        geo: north-america
+        unit: 1
+        price: included with brokerage / managed transportation agreement
+        userMultiplied: false
+    elements:
+      - name: Pending Reconciliation
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

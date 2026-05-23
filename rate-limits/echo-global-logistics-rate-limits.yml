@@ -1,0 +1,43 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Echo Global Logistics
+providerId: echo-global-logistics
+created: '2026-05-23'
+modified: '2026-05-23'
+reconciled: false
+tags:
+  - Logistics
+  - Freight
+  - Third Party Logistics
+  - API
+  - Rate Limiting
+  - Quotas
+  - Throttling
+description: >-
+  Placeholder rate-limit artifact for Echo Global Logistics' EchoSync APIs.
+  Public documentation does not publish numeric per-key request rates or
+  concurrency ceilings; partners receive applicable limits with their API
+  credentials during onboarding.
+notes: >-
+  Initial scaffold — limits are partner-specific and not published. Clients
+  should design for 429 backoff and Retry-After handling per common REST
+  practice.
+sources:
+  - https://www.echo.com/technology/integrations/echosync/documentation/
+responseCodes:
+  throttled: 429
+limits:
+  - name: Default
+    scope: api-key
+    metric: requests
+    limit: see partner onboarding documentation
+    notes: Pending reconciliation; assume conservative limits and confirm with Echo support.
+policies:
+  - name: Backoff Strategy
+    description: Clients should implement exponential backoff with jitter and honor any Retry-After header on 429 responses.
+  - name: OAuth Token Refresh
+    description: Cache OAuth 2.0 bearer tokens issued by the EchoSync Authorizer API and refresh before expiry rather than per-request to avoid unnecessary auth traffic.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
