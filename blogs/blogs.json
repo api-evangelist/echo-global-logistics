@@ -9,20 +9,20 @@
       "method": "feed"
     },
     {
-      "source": "https://www.echo.com/company/contact-us/",
-      "feed_url": "https://www.echo.com/company/contact-us/feed/",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
-    },
-    {
       "source": "https://www.echo.com/resources/blog/",
       "feed_url": "https://www.echo.com/resources/blog/",
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "https://www.echo.com/company/contact-us/",
+      "feed_url": "https://www.echo.com/company/contact-us/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z"
 }
