@@ -124,6 +124,10 @@ apis:
       - type: Documentation
         url: https://www.echo.com/technology/integrations/echosync/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/echo-global-logistics-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/echo-global-logistics-domain-security.yml
   - type: Website
     url: https://www.echo.com/
   - type: Portal
