@@ -10,7 +10,19 @@ description: >-
   for $1.3B. Its technology platform spans EchoShip (shipper portal),
   EchoDrive (carrier portal and mobile app), EchoConnect (broker architecture)
   and EchoSync, the API and EDI integration platform.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/echo-global-logistics.png
 tags:
   - Logistics
   - Freight
