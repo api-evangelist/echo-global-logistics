@@ -50,6 +50,10 @@ apis:
     humanURL: https://www.echo.com/technology/integrations/echosync/documentation/
     tags:
       - Authentication
+      - REST
+      - EchoSync
+    tags_raw:
+      - Authentication
       - OAuth 2.0
       - REST
       - EchoSync
@@ -87,6 +91,12 @@ apis:
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.echo.com/technology/integrations/echosync/documentation/
     tags:
+      - Carrier
+      - Load Board
+      - Book It Now
+      - REST
+      - EchoSync
+    tags_raw:
       - Carrier
       - Loadboard
       - Book It Now
