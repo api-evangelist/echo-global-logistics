@@ -103,7 +103,7 @@ apis:
     humanURL: https://www.echo.com/technology/integrations/echosync/documentation/
     tags:
       - Carrier
-      - Load Board
+      - Loadboard
       - Book It Now
       - REST
       - EchoSync
